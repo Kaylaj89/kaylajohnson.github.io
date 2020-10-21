@@ -1,3 +1,4 @@
+
 .cards {
     margin: 0 auto;
     max-width: 900px;
@@ -7,7 +8,7 @@
 }
 
 .card {
-    box-shadow: 0 0 10px var(--light);
+    box-shadow: 0 0 10px var(--primary);
 }
 
 .card__image {
@@ -16,24 +17,13 @@
     display: block;
     height: available;
     object-fit: cover;
-    position: center;
 }
 
 .card__content {
     line-height: 1.5;
     font-size: 0.9em;
     padding: 15px;
-    background: var(--light);
-}
-
-.card__content > p:first-of-type {
-    margin-top: 0;
-
-}
-
-.card__content > p:last-of-type {
-    margin-bottom: 0;
-
+    background: var(--primary);
 }
 
 .card__info {
@@ -41,7 +31,7 @@
     background: #0f4c5c;
     font-size: 0.9em;
     color: white;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid var(--primary);
 }
 
 .card__info i {
@@ -51,6 +41,7 @@
 a {
     text-decoration-line: none;
     color: white;
+    box-sizing: border-box;
 }
 
 a:hover {
@@ -59,5 +50,12 @@ a:hover {
 }
 
 .intro_portfolios h1 {
+    text-align: center;
+}
+
+.portfolio_footer {
+    position: relative;
+    margin-bottom: 0;
+    width: 100%;
     text-align: center;
 }
